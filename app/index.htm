@@ -1,0 +1,33 @@
+
+<html>
+  <body>
+    File:<input id="image-file" type="file" value='' />
+    <br>
+    Pin: <input type=text id=pin value=''>
+    <br>
+    Bits: 
+         <input type=radio id=bits name=bits value=128>128 
+         <input type=radio id=bits name=bits value=256 checked>256
+         <input type=radio id=bits name=bits value=512>512
+    <br>
+    <input type=button value=Create onclick='doit()'>
+    <br>
+    <textarea rows=10 cols=100 id=show></textarea>
+    <br>
+    Site: <input type=text id=site value=''>
+    <br>
+    Bits: 
+         <input type=radio id=bits2 name=bits2 value=128>128 
+         <input type=radio id=bits2 name=bits2 value=256 checked>256
+         <input type=radio id=bits2 name=bits2 value=512>512
+    <br>
+    <input type=button value=Create onclick='dosite()'>
+    <br>
+    <textarea rows=10 cols=100 id=show2></textarea>
+    
+    <script src="bundle.js"></script>
+  </body>
+
+
+</html>
+
