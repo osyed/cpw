@@ -1,5 +1,27 @@
 
 <html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    .show {
+      width: 100em;
+    }
+    @media screen and (max-width: 1000px){
+      .show {
+        width: 80em;
+      }
+    }
+    @media screen and (max-width: 650px){
+      .show {
+        width: 30em;
+      }
+      .btnCreate {
+        width: 100px;
+        height: 40px;
+      }
+    }
+  </style>
   <body>
     File:<input id="image-file" type="file" value='' />
     <br>
@@ -10,9 +32,9 @@
          <input type=radio id=bits name=bits value=256 checked>256
          <input type=radio id=bits name=bits value=512>512
     <br>
-    <input type=button value=Create onclick='doit()'>
+    <input type=button value=Create class="btnCreate" onclick='doit()'>
     <br>
-    <textarea rows=10 cols=100 id=show></textarea>
+    <textarea rows=10 id=show class="show"></textarea>
     <br>
     Site: <input type=text id=site value=''>
     <br>
@@ -22,9 +44,9 @@
          <input type=radio id=bits2 name=bits2 value=256 checked>256
          <input type=radio id=bits2 name=bits2 value=512>512
     <br>
-    <input type=button value=Create onclick='dosite()'>
+    <input type=button value=Create class="btnCreate" onclick='dosite()'>
     <br>
-    <textarea rows=10 cols=100 id=show2></textarea>
+    <textarea rows=10 id=show2 class="show"></textarea>
     
     <script src="bundle.js"></script>
     <p>
